@@ -12,7 +12,22 @@
 
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
-	</head>
+
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+		
+		
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
+		<link href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" rel="stylesheet" />
+		
+		<script>
+			$(document).on("click", '[data-toggle="lightbox"]', function(event) {
+				event.preventDefault();
+				$(this).ekkoLightbox();
+			});
+		</script>
+		
+		</head>
 	<body>	
 	
 	
@@ -30,92 +45,114 @@
 					<a class="nav-link active" href="#">Home</a>
 				  </li>
 				  <li class="nav-item">
-					<a class="nav-link" href="#">Our Challenges</a>
+					<a class="nav-link" href="#orphanage_today">Orphange Today</a>
 				</li>
 				  <li class="nav-item">
-					<a class="nav-link" href="#">Contribute</a>
-				  </li>
+					<a class="nav-link" href="#children">Our Children</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#team">Team</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#grounds">Grounds</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#challenges">Challenges</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#contribute">Contribute</a>
+				</li>
 				</ul>
 			</div>
 		</div>
 	</nav>
 	
 	<div class="jumbotron jumbotron-fluid bg-cover" id="landingJumbotron" >
-
-		<div class="container text-center" style="padding: 150px;" >
-			<h1>Tree of Life Orphanage</h1>
-			<p>Preparing children for the future by educating them intellectually, emotionally, and spiritually</p>
+		<div class="container text-center"  style="padding-top: 10em;">
+			<div class="row">
+				<h1>Tree of Life Orphanage</h1>
+				<p>Preparing children for the future by educating them intellectually, emotionally, and spiritually</p>
+				<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+					<div align="center"></div>
+					<div align="center"></div>
+					<div align="center"><input alt="PayPal - The safer, easier way to pay online!" name="submit" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" type="image"><br>
+					<img src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" alt="" width="1" height="1" border="0"></div>
+				</form>
+			</div>
 		</div>
 	</div>
 	
 	</header>
 	
-	<div class="jumbotron jumbotron-fluid bg-dark text-light" id="section1" >
-		<div class="container" style="padding-top: 30px;">
-			<div class="row">
-				<div class="col-8" >
-					<h2 >The Tree of Life School and Orphanage Today</h2>
-					<p>
-					Tree of life Orphanage a Nonprofit 501(c)(3) organization, cares for the needs of fifteen orphaned Haitian children by feeding, clothing, schooling, and attending to their medical needs. We strive to prepare our children for the future by educating them intellectually, emotionally, and spiritually.
-					Also, two hundred+ children from the local community gain free education in our onsite school and receive lunch three days a week (a prerequisite to learning). Fifty adults take care of the orphanage’s and school’s needs and make the programs work.
-					We have two programs that reach out into the local community:  micro-financing for single mothers and a village soccer tournament.
-					</p>
-				</div>
-				<div class="col-4">
-					<img src="assets/imageTwo.jpg" style="height: 350px;"></img>
-				</div>
-			</div>
-		</div>
-	</div>
-
-	<div class="jumbotron jumbotron-fluid bg-light" >
-		<div class="container " style="padding: 30px; ">
-			<div class="row">
-				<h1>Our Children</h1>
-					<p>Our Orphans originally ranged in age from (3) to 10 and have now grown for ten years.  Some are almost adults and all are in or near adolescence.  Picture of the orphans from long ago followed by more current photos.
-					The school children wear uniforms which vary by grade – show a couple of pictures of school children.
-					The Tree of L:ife provides a high level of education as measured by success on the national exams to both our orphans and our children from the surrounding village</p>
-			</div>
-			<div class="row">
-				<div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-ride="carousel" >
-					<div class="carousel-inner">
-						<div class="carousel-item active" data-interval="10000">
-							<img src="assets/slideShowOne.jpg" class="d-block w-100"alt="...">
-							<div class="carousel-caption">
-								<h5>First slide label</h5>
-								<p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-							</div>
-						</div>
-						<div class="carousel-item" data-interval="10000">
-							<img src="assets/slideShowTwo.jpg" class="d-block w-100" alt="...">
-							<div class="carousel-caption">
-								<h5>Second slide label</h5>
-								<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-							</div>
-						</div>
-						<div class="carousel-item" data-interval="10000">
-							<img src="assets/slideShowThree.jpg" class="d-block w-100" alt="...">
-							<div class="carousel-caption">
-								<h5>Third slide label</h5>
-								<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
-							</div>
-						</div>
-					</div>
-					<a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
-						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-						<span class="sr-only">Previous</span>
-					</a>
-					<a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
-						<span class="carousel-control-next-icon" aria-hidden="true"></span>
-						<span class="sr-only">Next</span>
-					</a>
-				</div>
-			</div >
-		</div>
-	</div>
-
+	<section id="orphanage_today">
 		<div class="jumbotron jumbotron-fluid bg-dark text-light">
-			<div class="container justify-content-center" style="padding-top: 30px;">
+			<div class="container" style="padding-top: 5em; padding-bottom: 5em;">
+				<div class="row">
+					<div class="col-9" >
+						<h2 >The Tree of Life School and Orphanage Today</h2>
+						<p>
+						Tree of life Orphanage a Nonprofit 501(c)(3) organization, cares for the needs of fifteen orphaned Haitian children by feeding, clothing, schooling, and attending to their medical needs. We strive to prepare our children for the future by educating them intellectually, emotionally, and spiritually.
+						Also, two hundred+ children from the local community gain free education in our onsite school and receive lunch three days a week (a prerequisite to learning). Fifty adults take care of the orphanage’s and school’s needs and make the programs work.
+						We have two programs that reach out into the local community:  micro-financing for single mothers and a village soccer tournament.
+						</p>
+					</div>
+					<div class="col-3">
+						<img src="assets/imageTwo.jpg" style="height: 200px;"></img>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<section id="children">
+		<div class="jumbotron jumbotron-fluid bg-light section2" >
+			<div class="container " style="padding-top: 5em; padding-bottom: 5em;">
+				<div class="row">
+					<h1>Our Children</h1>
+						<p>Our Orphans originally ranged in age from (3) to 10 and have now grown for ten years.  Some are almost adults and all are in or near adolescence.  Picture of the orphans from long ago followed by more current photos.
+						The school children wear uniforms which vary by grade – show a couple of pictures of school children.
+						The Tree of Life provides a high level of education as measured by success on the national exams to both our orphans and our children from the surrounding village</p>
+				</div>
+				<div class="row">
+					<div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-ride="carousel" >
+						<div class="carousel-inner">
+							<div class="carousel-item active" data-interval="5000">
+								<img src="assets/slideShowOne.jpg" class="d-block w-100"alt="...">
+								<div class="carousel-caption">
+									<!-- <h5>Third slide label</h5> -->
+									<!-- <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p> -->
+								</div>
+							</div>
+							<div class="carousel-item" data-interval="5000">
+								<img src="assets/slideShowTwo.jpg" class="d-block w-100" alt="...">
+								<div class="carousel-caption">
+									<!-- <h5>Third slide label</h5> -->
+									<!-- <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p> -->
+								</div>
+							</div>
+							<div class="carousel-item" data-interval="5000">
+								<img src="assets/slideShowThree.jpg" class="d-block w-100" alt="...">
+								<div class="carousel-caption">
+									<!-- <h5>Third slide label</h5> -->
+									<!-- <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p> -->
+								</div>
+							</div>
+						</div>
+						<a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						</a>
+						<a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+							<span class="carousel-control-next-icon" aria-hidden="true"></span>
+						</a>
+					</div>
+				</div >
+			</div>
+		</div>
+	</section>
+
+	<section id="team">
+		<div class="jumbotron jumbotron-fluid bg-dark text-light" >
+			<div class="container justify-content-center" style="padding-top: 5em; padding-bottom: 5em;">
 				<h1>Our Team</h1>
 				<div class="row">
 					<div class="col-4">
@@ -165,32 +202,293 @@
 								<div class="carousel-item" data-interval="10000">
 									<img src="assets/staff_three.jpg" class="d-block w-100" alt="...">
 								</div>
+								<div class="carousel-item" data-interval="10000">
+									<img src="assets/teachers.jpg" class="d-block w-100" alt="...">
+								</div>
 							</div>
 							<a class="carousel-control-prev" href="#carouselExampleCaptionsTwo" role="button" data-slide="prev">
 								<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-								<span class="sr-only">Previous</span>
+								<!--  <span class="sr-only">Previous</span> -->
 							</a>
 							<a class="carousel-control-next" href="#carouselExampleCaptionsTwo" role="button" data-slide="next">
 								<span class="carousel-control-next-icon" aria-hidden="true"></span>
-								<span class="sr-only">Next</span>
+								<!-- <span class="sr-only">Next</span> -->
 							</a>
 						</div>
-						
-						
+
 					</div>
 				</div>
-					
-
 			</div>
 		</div>
-
-
-		<div class="jumbotron jumbotron-fluid bg-light" id="section4" >
-			<div class="container justify-content-center" style="padding-top: 20px;">
+	<section>
+	
+	<section id="grounds">
+		<div class="jumbotron jumbotron-fluid">
+			<div class="container justify-content-center" style="padding-top: 5em; padding-bottom: 5em;">
 			<h1>Orphanage Grounds</h1>
-
+			<p>
+				Source Matelas provides a gorgeous setting with soaring rounded hills and azure-turquoise seas, but little more.  There is minimal electricity, no sewage, no trash pickup, no fire department, no police department, no schools, no public health administration, and no municipal water.  Tree of Life must provide all of these for itself.
+			</p>
+			<p>
+				Many of the village children attending our school are not fed, or not fed adequately outside of school.
+			</p>
+			<div class="row">
+			
+				<div class="col-6">	
+					<div id="carousel3" class="carousel slide carousel-fade" data-ride="carousel" >
+						<div class="carousel-inner">
+							<div class="carousel-item active" data-interval="10000">
+								<img src="assets/grounds.jpg" class="d-block w-100 h-100"alt="...">
+							</div>
+							<div class="carousel-item" data-interval="10000">
+								<img src="assets/gate-solar-copy-1024x768.jpg" class="d-block w-100 h-100" alt="...">
+							</div>
+							<div class="carousel-item" data-interval="10000">
+								<img src="assets/Source_Matelas_705G.jpg" class="d-block w-100 h-100" alt="...">
+							</div>
+						</div>
+						<a class="carousel-control-prev" href="#carousel3" role="button" data-slide="prev">
+							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							<!--  <span class="sr-only">Previous</span> -->
+						</a>
+						<a class="carousel-control-next" href="#carousel3" role="button" data-slide="next">
+							<span class="carousel-control-next-icon" aria-hidden="true"></span>
+							<!-- <span class="sr-only">Next</span> -->
+						</a>
+					</div>
+				</div>
+				<div class="col-6">	
+					<div id="wrapper-9cd199b9cc5410cd3b1ad21cab2e54d3">
+					<div id="map-9cd199b9cc5410cd3b1ad21cab2e54d3"></div><script>(function () {
+					var setting = {"height":360,"width":600,"zoom":11,"queryString":"Tree of Life Orphanage, Haiti","place_id":"ChIJpTuYIyFht44Rig5fgLizPC8","satellite":true,"centerCoord":[18.71400798350193,-72.35585301941545],"cid":"0x2f3cb3b8805f0e8a","lang":"en","cityUrl":"/haiti/port-au-prince-32379","cityAnchorText":"Map of Port-au-Prince, Haiti","id":"map-9cd199b9cc5410cd3b1ad21cab2e54d3","embed_id":"352308"};
+					var d = document;
+					var s = d.createElement('script');
+					s.src = 'https://1map.com/js/script-for-user.js?embed_id=352308';
+					s.async = true;
+					s.onload = function (e) {
+					  window.OneMap.initMap(setting)
+					};
+					var to = d.getElementsByTagName('script')[0];
+					to.parentNode.insertBefore(s, to);
+				  })();</script><a href="https://1map.com/map-embed">1 Map</a></div>
+					</div>
+				</div>
 			</div>
 		</div>
+	</section>
+
+	<section id="challenges">
+		<div class="jumbotron jumbotron-fluid bg-dark text-light">
+			<div class="container justify-content-center" style="padding-top: 5em; padding-bottom: 5em;">
+			<h1>Challenges</h1>
+			<p>
+			Haiti is in social and economic desperation, the poorest country in the Western Hemisphere.  Acts of violence are commonplace.  Unemployment is pandemic.
+			</p>
+			<p>
+			Haiti is politically unsettled with frequent changes of government,
+			</p>
+			<p>
+			It is essential that the children in Haiti are allowed educational opportunities in order to rebuild the infrastructure and pull the country out of crisis.
+			</p>
+			<p>
+			The Tree of Life Orphanage pays substantial taxes to the central government.  This is unlike charitable endeavors in America and other places.  But the government does take an active role in monitoring orphanages’ performances and in shutting down fraudulent orphanages.  It also provides standards for educational institutions which Tree of Life meets easily.  The Haitian government does not provide funding to the orphanage and school of Tree of Life.
+			</p>
+			<p>
+			It is the the hope of Tree of Life to provide schooling and everyday essentials to as many children as possible.
+			</p>
+			<p>
+			Without our efforts, the outlook for many children would be bleak.
+			</p>
+			<b>U.S. State Department Travel Advisory</b> 
+			<p>Current Status: Level 4 - Do not travel to Haiti due to COVID-19, crime, civil unrest, and kidnapping.</p>
+			</div>
+		</div>
+	</section>
+
+	<section id="contribute">
+		<div class="jumbotron jumbotron-fluid">
+			<div class="container justify-content-center" style="padding-top: 5em; padding-bottom: 5em;">
+			<h1>Contribute</h1>
+				<div class="row"  style="padding-top: 20px;">
+				<h4>Current Items of Need</h4>
+				<ul style="padding-left: 4em;">
+					<li>Water Filter - $425</li>
+					<li>Solar Panels - $3,900</li>
+					<li>Automobile Maintenance - $1,500</li>
+					<li>School uniforms and supplies - $3,950</li>
+					<li>Library Books - $900</li>
+					<li>Sports Equipment - $500</li>
+					<li>Toiletries - $70</li>
+				</ul>
+				<p>
+				All monies go directly to the orphanage.  There are no New York administrative/ fund raising costs (other than accounting fees for the 990 and a $40/month bank fee).  All other New York work is on a volunteer basis. This is a 501(c)(3) organization — all contributions are fully tax-deductible.
+				</p>
+				<p>
+				Your donations to the Tree of Life Orphanage can be put to use in several ways.
+				</p>
+				<p>
+					It costs about $60 per student per month to support a child with food and clothing;
+					It costs about $25 per student per month to educate that child;
+					There are special times during the year that need funding, e.g., holiday parties and school supplies.
+					Any contribution is welcome. You may specify what aspect of the orphanage you wish to support or just make a general contribution. Also, you may wish to support us by donating once a month or once a year.
+				<p>
+				<p>
+					Every two months or so, a Friends of the Tree of Life Orphanage letter is sent out, updating you on what is going on. So, be sure to include your address and e-mail when making a donation.
+				</p>
+ 
+				<p>
+				Your donations will make a difference in each child’s life and give him/her a hope for the future.
+				</p>
+ 
+				<p>
+				To donate via mail, please make checks payable to “Friends of the Tree of Life Orphanage, Inc.” and mail to:
+				</p>
+ 
+				<address style="padding-left: 4em;">
+				<em>Friends of the Tree of Life Orphanage</em><br>
+				P.O. Box 324<br>
+				Katonah, New York 10536<br>
+				</address>		
+				
+				<p>General gifts will be applied where most needed. Partial gifts towards above items are also welcome.To donate on line through our secure donation page at PayPal click the donate button below.</p>
+
+				<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+					<div align="center"></div>
+					<div align="center"></div>
+					<div align="center"><input alt="PayPal - The safer, easier way to pay online!" name="submit" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" type="image"><br>
+					<img src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" alt="" width="1" height="1" border="0"></div>
+				</form>
+				</div>
+				
+				<p>
+				You can specify what how you would like your donation to be used in the memo of the check (ex: “Food”), or it will go into our general fund and be used where it is most needed.
+				</p>
+				<p>
+				We are grateful for your caring donations and have hopeful expectations of making a huge difference in the lives of children and adults in Haiti.
+				</p>
+				
+			</div>	
+
+			<div class="container" style="margin-bottom: 15px;">
+				<div class="row">
+					<div class="col-lg- col-sm-6" style="padding-top: 1em; width: 20em; margin-bottom: 15px;">
+						<div class="thumbnail">
+							<img src="assets/present-orphans-768x1024.jpg" class="img-fluid img-thumbnail rounded">
+						</div>
+					</div>
+					<div class="col-lg-4 col-sm-6"  style="padding-top: 1em; width: 20em;">
+						<div class="thumbnail">
+							<img src="assets/water-1-600x800.jpg" class="img-fluid img-thumbnail rounded">
+						</div>
+					</div>
+					<div class="col-lg-4 col-sm-6"  style="padding-top: 1em; width: 20em;">
+						<div class="thumbnail">
+							<img src="assets/foodf-2-copy-400x533.jpg" class="img-fluid img-thumbnail rounded">
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-4 col-sm-6"  style="padding-top: 1em; width: 20em;">
+						<div class="thumbnail">
+							<img src="assets/imageThree.jpg" class="img-fluid img-thumbnail rounded">
+						</div>
+					</div>
+					<div class="col-lg-4 col-sm-6"  style="padding-top: 1em; width: 20em;">
+						<div class="thumbnail">
+							<img src="assets/fruit-1-copy-1-600x337.jpg" class="img-fluid img-thumbnail rounded">
+						</div>
+					<div class="col-lg-4 col-sm-6"  style="padding-top: 1em; width: 20em;">
+						<div class="thumbnail">
+							<img src="assets/a.jpg" class="img-fluid img-thumbnail rounded">
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-lg-3 col-md-4 col-6"  style="padding-top: 1em; width: 20em;">
+						<div class="d-block mb-4 h-100">
+							<img src="assets/b.jpg" class="img-fluid img-thumbnail rounded">
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-4 col-6"  style="padding-top: 1em; width: 20em;">
+						<div class="d-block mb-4 h-100">
+							<img src="assets/c.jpg" class="img-fluid img-thumbnail rounded">
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-4 col-6" style="padding-top: 1em; width: 20em;">
+						<div class="d-block mb-4 h-100">
+							<img src="assets/d.jpg" class="img-fluid img-thumbnail rounded">
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-4 col-6"  style="padding-top: 1em; width: 20em;">
+						<div class="d-block mb-4 h-100">
+							<img src="assets/e.jpg" class="img-fluid img-thumbnail rounded">
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-4 col-6"  style="padding-top: 1em; width: 20em;">
+						<div class="d-block mb-4 h-100">
+							<img src="assets/f.jpg" class="img-fluid img-thumbnail rounded">
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-4 col-6" style="padding-top: 1em; width: 20em;">
+						<div class="d-block mb-4 h-100">
+							<img src="assets/g.jpg" class="img-fluid img-thumbnail rounded">
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-4 col-6"  style="padding-top: 1em; width: 20em;">
+						<div class="d-block mb-4 h-100">
+							<img src="assets/h.jpg" class="img-fluid img-thumbnail rounded">
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-4 col-6"  style="padding-top: 1em; width: 20em;">
+						<div class="d-block mb-4 h-100">
+							<img src="assets/i.jpg" class="img-fluid img-thumbnail rounded">
+						</div>
+					</div>		
+					<div class="col-lg-3 col-md-4 col-6"  style="padding-top: 1em; width: 20em;">
+						<div class="d-block mb-4 h-100">
+							<img src="assets/j.jpg" class="img-fluid img-thumbnail rounded">
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-4 col-6"  style="padding-top: 1em; width: 20em;">
+						<div class="d-block mb-4 h-100">
+							<img src="assets/k.jpg" class="img-fluid img-thumbnail rounded">
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-4 col-6"  style="padding-top: 1em; width: 20em;">
+						<div class="d-block mb-4 h-100">
+							<img src="assets/l.jpg" class="img-fluid img-thumbnail rounded">
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-4 col-6" style="padding-top: 1em; width: 20em;">
+						<div class="d-block mb-4 h-100">
+							<img src="assets/m.jpg" class="img-fluid img-thumbnail rounded">
+						</div>
+					</div>					
+					<div class="col-lg-3 col-md-4 col-6"  style="padding-top: 1em; width: 20em;">
+						<div class="d-block mb-4 h-100">
+							<img src="assets/n.jpg" class="img-fluid img-thumbnail rounded">
+						</div>
+					</div>	
+					<div class="col-lg-3 col-md-4 col-6"  style="padding-top: 1em; width: 20em;">
+						<div class="d-block mb-4 h-100">
+							<img src="assets/o.jpg" class="img-fluid img-thumbnail rounded">
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-4 col-6"  style="padding-top: 1em; width: 20em;">
+						<div class="d-block mb-4 h-100">
+							<img src="assets/p.jpg" class="img-fluid img-thumbnail rounded">
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-4 col-6" style="padding-top: 1em; width: 20em;">
+						<div class="d-block mb-4 h-100">
+							<img src="assets/m.jpg" class="img-fluid img-thumbnail rounded">
+						</div>
+					</div>	
+				</div>
+			</div>
+		</div>
+	</section>
+
 
 	<footer class="footer text-center bg-dark text-light" style="padding:20px;">
 
@@ -207,9 +505,5 @@
 			
         </div>
     </footer>
-
-
-	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
 	</body>
 </html>

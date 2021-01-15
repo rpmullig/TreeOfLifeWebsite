@@ -4,7 +4,7 @@
 }
 
 #landingJumbotron {
-	background-image: linear-gradient(to bottom, rgba(255,255,255,0.8) 0%,rgba(255,255,255,0.95) 100%), url(assets/background_two.jpg);
+	background-image: linear-gradient(to bottom, rgba(255,255,255,0.8) 0%,rgba(255,255,255,0.85) 100%), url(assets/background_two.jpg);
 	background-repeat: no-repeat;
 	background-size: 100% auto;
 	background-position: center center; 
